@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Stupid Coaching</h1>
+
+  <p>Ask your coach anything:</p>
+
+  <form action="/answer" data-turbo="false">
+    <input type="text" name="question" placeholder="write your question" class="form-control">
+    <input type="submit" value="Ask!" class="btn btn-primary">
+  </form>
+
+</div>
+
+<%# in the form the name attribute enables you to set the
+key of the corresponding parameter, in this case the parameter
+will be question.... BUT WHY? %>
+
+<%# then we want the form to trigger our second user story "answer"
+which should be routed /answer %>
